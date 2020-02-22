@@ -11,7 +11,6 @@ import UIKit
 class ZooninViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    
     var selectedImg = UIImage()
     
     override func viewDidLoad() {
@@ -24,12 +23,16 @@ class ZooninViewController: UIViewController {
     
     }
     
-    @IBAction func backBtn(_ sender: Any) {
-        
-          dismiss(animated: true, completion: nil)
-        
-    }
     
+        var timer: Timer!
+    
+    // 戻る
+    @IBAction func backBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        
+ }
+            
+
     /*
     // MARK: - Navigation
 
@@ -39,5 +42,9 @@ class ZooninViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+   
 
+    
 }
+
+
